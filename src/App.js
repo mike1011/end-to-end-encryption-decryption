@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import DirectChat from './DirectChat';
+import GroupChat from './GroupChat';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <nav>
+          <ul>
+            <li><Link to="/direct-chat">Direct Chat</Link></li>
+            <li><Link to="/group-chat">Group Chat</Link></li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/direct-chat" element={<DirectChat />} />
+          <Route path="/group-chat" element={<GroupChat />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
