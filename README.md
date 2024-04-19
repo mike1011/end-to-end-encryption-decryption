@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+### End to End Encryption Decryption Chat Application
+EncryptoChat is a secure messaging ReactJS application that leverages end-to-end encryption using both asymmetric and symmetric key encryption provided by TweetNaCl.js. This project aims to provide a secure way of communicating where only the communicating users can read the messages.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Features
+End-to-End Encryption: All messages are encrypted on the client side using a combination of asymmetric and symmetric encryption.
+ReactJS Frontend: Modern and responsive UI built with React.
+Secure Key Handling: Public and private keys are generated using the NaCl library's cryptographic functions.
+Technologies
+ReactJS
+TweetNaCl.js for encryption
+nacl-util for utility functions like encoding and decoding
+Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Available Scripts
+### Prerequisites
+You will need Node.js and npm installed on your computer to run this project.
 
-In the project directory, you can run:
+# Install Node.js and npm
+https://nodejs.org/en/download/
+Installing
+Clone the repository to your local machine:
 
-### `npm start`
+git clone https://github.com/mike1011/end-to-end-encryption-decryption.git
+cd end-to-end-encryption-decryption
+Install the necessary packages:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm install
+Running the application
+To start the application, run:
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm run start
+This will start the React development server and open the application in your default web browser.
 
-### `npm run build`
+###  Usage
+Generate Keys: Upon first use, the user will need to generate a set of public and private keys. This can be done through the UI.
+Send Encrypted Message: To send a message, input the recipient's public key and your private key. The app will encrypt the message asymmetrically.
+Decrypt Message: When receiving a message, use your private key and the sender's public key to decrypt the message symmetrically.
+Contributing
+Contributions are welcome! Please feel free to submit a pull request or open issues to improve the application or suggest new features.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+###  Acknowledgments
+TweetNaCl.js contributors and community
+Everyone who contributed to the React ecosystem
