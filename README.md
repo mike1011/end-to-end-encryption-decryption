@@ -1,5 +1,5 @@
 # End to End Encryption Decryption Chat Application
-EncryptoChat is a secure messaging ReactJS application that leverages end-to-end encryption using both asymmetric and symmetric key encryption provided by TweetNaCl.js. This project aims to provide a secure way of communicating where only the communicating users can read the messages.
+A Demo app to showcase secure messaging using ReactJS that leverages end-to-end encryption using both asymmetric and symmetric key encryption provided by TweetNaCl.js. This project aims to provide a secure way of communicating where only the communicating users can read the messages.
 
 ### Features
 End-to-End Encryption: All messages are encrypted on the client side using a combination of asymmetric and symmetric encryption.
