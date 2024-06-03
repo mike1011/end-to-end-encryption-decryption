@@ -15,7 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 You will need Node.js and npm installed on your computer to run this project.
 
-# Install Node.js and npm
+### Install Node.js and npm
 https://nodejs.org/en/download/
 Installing
 Clone the repository to your local machine:
